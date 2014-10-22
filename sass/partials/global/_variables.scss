@@ -1,16 +1,74 @@
-// -----------------------------------------
-	// Layout Breakpoints
-// -----------------------------------------
-$maxWidth: 1280;
+// ---- ---- ---- ---- VARIABLES ---- ---- ---- ----
 
+// Width
+$maxWidth: 960px;
 
-// -----------------------------------------
-	// Font Sizes
-// -----------------------------------------
-$regularSize: 12;
+// Site Colors
+$sqGrey: rgb(43, 57, 66);; //#2b3942
+$sqDarkGrey: darken($sqGrey, 10%); //#202e2e
+$sqMidGrey: lighten($sqGrey, 20%);
+$sqLightGrey: lighten($sqGrey, 60%);
+$sqBlueGreen: rgb(12,85,92); //#0c555c
+$sqWhite: lighten($sqLightGrey, 20%);
+$sqRed: rgb(255,34,26); //#ff6761
 
+// Greys
+$black: rgb(0,0,0); //#000000
+$darkerGrey: lighten($black, 10%);
+$darkGrey: lighten($black, 25%); //#404040
+$midGrey: lighten($black, 50%); //#808080
+$lightGrey: lighten($black, 75%); //#bfbfbf
+$lighterGrey: lighten($black, 90%); //#e6e6e6
+$white: rgb(255,255,255); //#ffffff
 
-// -----------------------------------------
-	// Font Families
-// -----------------------------------------
-$helvetica: Helvetica, Arial, sans-serif;
+// Root
+$bodyColor: $sqGrey;
+$textColor: $sqLightGrey;
+$columnMargin: .5em;
+$gutter: 1em;
+$warningColor: red;
+
+// Typography
+$baseFont: 'PT Sans', sans-serif;
+$baseFontSize: 125%;
+$baselineHeight: 1.2em;
+$headingFont: $baseFont;
+$headingLineHeight: 1.35em;
+$headingFontWeight: bold;
+$headingColor: $sqLightGrey;
+$headingTextShadow: $sqMidGrey 1px 1px;
+$codeFont: Monaco, Courier New, monospace;
+$logoFont: 'Architects Daughter', sans-serif;
+
+// Links
+$linkColor: $sqRed; //#8B95B3
+$linkHover: darken($linkColor,5%);
+$linkVisited: darken($linkColor,10%);
+$linkFocus: darken($linkColor,15%);
+
+// Forms
+$textboxBackground: $sqWhite;
+$textboxBorderColor: $sqBlueGreen;
+$textboxBorderColorActive: $sqRed;
+$textboxBorderWidth: 1px;
+$textboxBorderStyle: solid;
+$textboxColor: $sqGrey;
+$textboxPlaceholderColor: $sqMidGrey;
+$textboxPadding: $gutter / 4;
+
+$buttonBackground: $sqDarkGrey;
+$buttonBorderColor: darken($buttonBackground,10%);
+$buttonBorderWidth: 1px;
+$buttonBorderStyle: solid;
+$buttonColor: $sqWhite;
+$buttonPadding: .25em .75em;
+
+// Tables
+$tableBackground: transparent;
+$tableStripe: $sqLightGrey;
+$tableFontSize: .875em;
+$tableLineHeight: 1.4em;
+$tableBorderWidth: 1px;
+$tableBorderStyle: solid;
+$tableBorderColor: $sqLightGrey;
+$tableHover: transparent;
